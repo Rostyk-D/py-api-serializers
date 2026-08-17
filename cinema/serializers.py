@@ -27,7 +27,7 @@ class ActorSerializer(serializers.ModelSerializer):
             "full_name",
         )
 
-    def get_full_name(self, obj):
+    def get_full_name(self, obj: Actor) -> str:
         return str(obj)
 
 
