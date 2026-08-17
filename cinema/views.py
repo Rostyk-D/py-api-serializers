@@ -54,7 +54,6 @@ class MovieViewSet(ModelViewSet):
             "partial_update",
         ):
             return MovieSerializer
-
         return MovieDetailSerializer
 
 
@@ -84,5 +83,4 @@ class MovieSessionViewSet(ModelViewSet):
             "partial_update",
         ):
             return MovieSessionSerializer
-
         return MovieSessionDetailSerializer
